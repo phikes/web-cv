@@ -3,7 +3,8 @@ exports.files =
     joinTo:
       'vendor.js': /^(?!app)/
       'app.js': /^app/
-  stylesheets: joinTo: 'app.css'
+  stylesheets:
+    joinTo: 'app.css'
 
 exports.plugins =
   babel: presets: ['latest']
@@ -15,3 +16,7 @@ exports.plugins =
         ]
       }
     ]
+  sass:
+    options:
+      includePaths: [ 'node_modules/bootstrap/scss' ]
+      precision: 8
