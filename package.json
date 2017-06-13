@@ -15,7 +15,10 @@
     "babel-brunch": "~6.0",
     "babel-preset-latest": "^6",
     "brunch": "^2",
+    "brunch-static": "^1.2.1",
     "clean-css-brunch": "^2",
+    "html-brunch-static": "^1.3.2",
+    "pug-brunch-static": "^2.0.1",
     "uglify-js-brunch": "^2"
   }
 }
