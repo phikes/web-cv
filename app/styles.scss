@@ -1,1 +1,30 @@
 @import "bootstrap";
+
+body {
+  background-color: #fafafa;
+  color: #4e5558;
+}
+
+.table th, .table td {
+  border: 0;
+}
+
+img.face {
+  border-radius: 100%;
+  width: 124px;
+  height: 124px;
+  margin: 20px;
+}
+
+hr {
+  background-color: #fff;
+  border-top: 2px dashed #8c8b8b;
+}
+
+.made-with {
+  margin-bottom: 20px;
+}
+
+.fa-heart {
+  color: darkred;
+}

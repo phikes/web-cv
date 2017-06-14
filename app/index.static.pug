@@ -1,5 +1,38 @@
 ---
 _options:
   layout: app/layouts/index.static.pug
+  partials:
+    - app/partials/basic.static.pug
+    - app/partials/work.static.pug
+    - app/partials/education.static.png
+    - app/partials/social.static.pug
+    - app/partials/hobbies.static.pug
+    - app/partials/other.static.pug
+    - app/partials/made_with.static.pug
 ---
-h1 What is wrong with you?
+.row
+  .col-sm-2: img.face(src="face.jpg")
+  .col-sm-10.d-flex.align-items-center
+    div
+      h1 Hej! Velkommen til Phillip Kessels's Web CV!
+      h2 Software Developer
+
+hr
+
+include partials/basic.static.pug
+
+hr
+
+.row
+  .col-md-6
+    include partials/work.static.pug
+  .col-md-6
+    include partials/education.static.pug
+    include partials/other.static.pug
+    include partials/hobbies.static.pug
+
+
+hr
+
+include partials/social.static.pug
+include partials/made_with.static.pug
