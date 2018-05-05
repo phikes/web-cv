@@ -10,7 +10,7 @@
     "build": "brunch build --production"
   },
   "dependencies": {
-    "bootstrap": "^4.0.0-alpha.6"
+    "bootstrap": "^4.1.0"
   },
   "devDependencies": {
     "auto-reload-brunch": "^2",
