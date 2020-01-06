@@ -1,6 +1,10 @@
 {
   "name": "brunch-app",
   "description": "Brunch.io application",
+  "engines": {
+    "node": "10.16.2",
+    "yarn": "1.19.2"
+  },
   "private": true,
   "author": "Brunch",
   "version": "0.0.1",

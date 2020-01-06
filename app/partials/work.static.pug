@@ -1,7 +1,47 @@
 h4 #[i.fa.fa-briefcase] Work Experience
 hr
 ul.list-unstyled
-  li
+  li.break-inside-avoid
+    table.table.table-sm.table-hover.table-borderless
+      tr: th Date
+        td 2019 - present
+      tr: th Company
+        td
+          | promeldung  
+          a(href="https://promeldung.de" target="_blank" rel="noopener"): i.fa.fa-external-link
+      tr: th Responsibilities
+        td damage reports for real estate by app
+      tr: th Position
+        td Founder
+      tr: th Technologies
+        td
+          ul.list-inline
+            each technology in [ 'Ruby', 'Rails', 'PostgreSQL', 'Amazon Web Services',  'GraphQL', 'Terraform', 'TypeScript', 'AngularJS', 'Gitlab', 'Git' ]
+              li.list-inline-item.badge.badge-secondary
+                i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
+                |  
+                = technology
+  li.break-inside-avoid
+    table.table.table-sm.table-hover.table-borderless
+      tr: th Date
+        td 2018 - present
+      tr: th Company
+        td
+          | spacepilots GmbH  
+          a(href="https://spacepilots.co" target="_blank" rel="noopener"): i.fa.fa-external-link
+      tr: th Position
+        td CTO
+      tr: th Responsibilities
+        td frontend/backend lead development of several client projects and in-house products, management
+      tr: th Technologies
+        td
+          ul.list-inline
+            each technology in [ 'Ruby', 'Rails', 'PostgreSQL', 'Amazon Web Services',  'GraphQL', 'Terraform', 'JavaScript', 'TypeScript',  'React', 'AngularJS', 'Gitlab', 'Markdown', 'Git' ]
+              li.list-inline-item.badge.badge-secondary
+                i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
+                |  
+                = technology
+  li.break-inside-avoid
     table.table.table-sm.table-hover.table-borderless
       tr: th Date
         td 2017 - 2018
@@ -38,7 +78,7 @@ ul.list-unstyled
                 i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
                 |  
                 = technology
-  li
+  li.break-inside-avoid
     table.table.table-sm.table-hover.table-borderless
       tr: th Date
         td 2017 - 2018
@@ -56,7 +96,7 @@ ul.list-unstyled
                 i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
                 |  
                 = technology
-  li
+  li.break-inside-avoid
     table.table.table-sm.table-hover.table-borderless
       tr: th Date
         td 2012 - 2015
@@ -74,7 +114,7 @@ ul.list-unstyled
                 i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
                 |  
                 = technology
-  li
+  li.break-inside-avoid
     table.table.table-sm.table-hover.table-borderless
       tr: th Date
         td 2012 - 2015
@@ -92,7 +132,7 @@ ul.list-unstyled
                 i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
                 |  
                 = technology
-  li
+  li.break-inside-avoid
     table.table.table-sm.table-hover.table-borderless
       tr: th Date
         td 2015 - 2016
