@@ -2,40 +2,41 @@
 _options:
   layout: app/layouts/index.static.pug
 ---
-.text-center.my-3
+.text-center.my-3.break-inside-avoid
   img.rounded-circle.w-10(src="face.jpg")
   h1 Phillip Kessels
   h2 IT-Consultant & Software Engineer
 
-.nav.justify-content-center
+.nav.justify-content-center.break-inside-avoid.d-none
   li.nav-item
     a.nav-link(href="#services") #[i.fa.fa-check] Services
   li.nav-item
     a.nav-link(href="#cv") #[i.fa.fa-list-ul] Curriculum Vitae
 
-hr
+.break-inside-avoid
+  hr
 
-include partials/basic.static.pug
+  include partials/basic.static.pug
 
-hr
+  hr
 
 .row
-  .col-md-12
+  .col-md-12.d-none
     h3#services #[i.fa.fa-check] Services
     hr
     include partials/services.static.pug
-  .col-md-12
+  .col-md-12.break-inside-avoid
     h3#cv #[i.fa.fa-list-ul] Curriculum Vitae
     hr
-  .col-md-6
+  .col-md-6.col-print-12
     include partials/work.static.pug
-  .col-md-6
+  .col-md-6.col-print-12
     include partials/education.static.pug
     include partials/other.static.pug
     include partials/hobbies.static.pug
 
-
 hr
-
-include partials/social.static.pug
-include partials/made_with.static.pug
+.break-inside-avoid
+  include partials/social.static.pug
+  include partials/made_with.static.pug
+  .text-center.small.mb-5: a(href="https://phikes.de").text-muted.text-decoration-none phikes.de
