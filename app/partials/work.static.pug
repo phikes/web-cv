@@ -4,10 +4,30 @@ ul.list-unstyled
   li
     table.table.table-sm.table-hover.table-borderless
       tr: th Date
+        td 2018 - present
+      tr: th Company
+        td
+          | spacepilots GmbH
+          a(href="https://spacepilots.co" target="_blank" rel="noopener"): i.fa.fa-external-link
+      tr: th Position
+        td CTO
+      tr: th Responsibilities
+        td frontend/backend lead development of several client projects and in-house products, management
+      tr: th Technologies
+        td
+          ul.list-inline
+            each technology in [ 'Ruby', 'Rails', 'PostgreSQL', 'Amazon Web Services',  'GraphQL', 'Terraform', 'JavaScript', 'TypeScript',  'React', 'AngularJS', 'Gitlab', 'Markdown', 'Git' ]
+              li.list-inline-item.badge.badge-secondary
+                i(class="devicon-"+technology.toLowerCase().replace(/\s/g, '')+"-plain")
+                |  
+                = technology
+  li
+    table.table.table-sm.table-hover.table-borderless
+      tr: th Date
         td 2017 - 2018
       tr: th Company
         td
-          | fejo.dk GmbH, Düsseldorf  
+          | fejo.dk GmbH, Düsseldorf
           a(href="https://www.fejo.dk" target="_blank" rel="noopener"): i.fa.fa-external-link
       tr: th Position
         td Software Developer
